@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .face {
+      width: 450px;
+      height: 450px;
+      border-radius: 50%;
+      background: black;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .face::before {
+      content: "";
+      width: 50px;
+      height: 50px;
+      background: white;
+      border: 15px solid black;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      left: 7%;
+    }
+
+    .face::after {
+      content: "";
+      width: 50px;
+      height: 50px;
+      background: white;
+      border: 15px solid black;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      right: 7%;
+    }
+
+    .blush {
+      width: 450px;
+      height: 450px;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .blush::before {
+      content: "";
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      position: absolute;
+      background: red;
+      top: 50%;
+      left: 8%;
+      transform: translate(-50%, -50%);
+    }
+
+    .blush::after {
+      content: "";
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      position: absolute;
+      background: red;
+      top: 50%;
+      left: 92%;
+      transform: translate(-50%, -50%);
+    }
+
+    .eye {
+      width: 450px;
+      height: 450px;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .eye::before {
+      content: "";
+      width: 60px;
+      height: 60px;
+      border: 15px solid white;
+      border-radius: 50%;
+      position: absolute;
+      background: black;
+      top: 30%;
+      left: 31%;
+      transform: translate(-50%, -50%);
+    }
+
+    .eye::after {
+      content: "";
+      width: 60px;
+      height: 60px;
+      border: 15px solid white;
+      border-radius: 50%;
+      position: absolute;
+      background: black;
+      top: 30%;
+      left: 68%;
+      transform: translate(-50%, -50%);
+    }
+
+    .nose {
+      width: 200px;
+      height: 140px;
+      background: white;
+      border-radius: 50%;
+      position: absolute;
+      top: 55%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .nose::before {
+      content: "";
+      width: 55px;
+      height: 40px;
+      background: black;
+      border-radius: 50%;
+      position: absolute;
+      top: 25%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .nose::after {
+      content: "";
+      width: 120px;
+      height: 40px;
+      background: black;
+      border-radius: 50%;
+      position: absolute;
+      top: 67%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .Vmark {
+      width: 450px;
+      height: 450px;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .Vmark::before {
+      content: "";
+      width: 60px;
+      height: 56px;
+      background: white;
+      position: absolute;
+      top: 83%;
+      left: 42%;
+      transform: translate(-50%, -50%) skew(50deg);
+    }
+
+    .Vmark::after {
+      content: "";
+      width: 60px;
+      height: 56px;
+      background: white;
+      position: absolute;
+      top: 83%;
+      left: 57%;
+      transform: translate(-50%, -50%) skew(-50deg);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="face">
+    <div class="blush"></div>
+    <div class="eye"></div>
+    <div class="nose"></div>
+    <div class="Vmark"></div>
+  </div>
+</body>
+
+</html>
